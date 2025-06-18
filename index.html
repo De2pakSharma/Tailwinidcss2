@@ -1,0 +1,532 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookHunt</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+</html>
+ <body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="border-b shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div>
+          <img src="images/logo-dark.png" alt="BookHunt Logo" class="h-8">
+        </div>
+
+        <!-- Hidden Checkbox for Toggle -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+        <!-- Toggler Button -->
+        <label for="menu-toggle" class="md:hidden cursor-pointer z-20 relative">
+          <!-- Hamburger -->
+          <svg class="w-6 h-6 text-gray-700 peer-checked:hidden block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Cross -->
+          <svg class="w-6 h-6 text-gray-700 hidden peer-checked:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </label>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <a href="#" class="hover:text-blue-600">About</a>
+          <a href="#" class="hover:text-blue-600">Chapter</a>
+          <a href="#" class="hover:text-blue-600">Testimonial</a>
+          <a href="#" class="hover:text-blue-600">Author</a>
+          <a href="#" class="hover:text-blue-600">Pricing</a>
+          <a href="#" class="hover:text-blue-600">Contact Us</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div class="peer-checked:flex hidden flex-col mt-4 space-y-2 md:hidden text-gray-600 font-medium">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">About</a>
+        <a href="#" class="hover:text-blue-600">Chapter</a>
+        <a href="#" class="hover:text-blue-600">Testimonial</a>
+        <a href="#" class="hover:text-blue-600">Author</a>
+        <a href="#" class="hover:text-blue-600">Pricing</a>
+        <a href="#" class="hover:text-blue-600">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-16 max-w-7xl mx-auto gap-12">
+    
+    <!-- Text Content -->
+    <div class="w-full max-w-xl space-y-6 text-center lg:text-left">
+      <p class="text-sm text-gray-500">50% discount on early purchase</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-black leading-snug">
+        Solve your daily life<br>
+        problem in 1 minute
+      </h2>
+      <ul class="space-y-2 text-base text-gray-700">
+        <li><span class="font-semibold text-black">Learn From Expert</span> in details</li>
+        <li>16 Chapters included</li>
+        <li>eBook includes iBooks, PDF & ePub versions</li>
+        <li>Audio book with every purchase</li>
+      </ul>
+      <div class="space-y-3">
+        <button class="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 w-full sm:w-auto">
+          Get this book at 29$
+        </button>
+        <p class="text-sm text-gray-600">
+          Interested in free chapter? <a href="#" class="text-blue-600 underline">Get it now</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Book Image -->
+    <div class="w-full max-w-md">
+      <img src="images/bookimg.png" alt="Book Mockup" class="w-full rounded-lg shadow-lg">
+    </div>
+  </section>
+
+
+  <section class="px-6 py-16 text-center max-w-6xl mx-auto">
+  <!-- Top Text -->
+  <p class="text-sm text-gray-500 mb-4">Creative works funnel</p>
+  <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-snug">
+    Explore the most appropriate courses and certificate<br class="hidden sm:block" />
+    that you desire will be the sweet ultimate reward. Let’s<br class="hidden sm:block" />
+    get started
+  </h2>
+  <p class="text-sm text-gray-600 mb-12">
+    Have questions? <a href="#" class="font-semibold text-gray-800 underline">Get Free Guidebook</a>
+  </p>
+
+  <!-- Logos -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+    <img src="images/logo1.png" alt="Logo 1" class="h-12 object-contain">
+    <img src="images/logo2.png" alt="Logo 2" class="h-12 object-contain">
+    <img src="images/logo3.png" alt="Logo 3" class="h-12 object-contain">
+    <img src="images/logo4.png" alt="Logo 4" class="h-12 object-contain">
+    <img src="images/logo2.png" alt="Logo 5" class="h-12 object-contain">
+    <img src="images/logo1.png" alt="Logo 6" class="h-12 object-contain">
+  </div>
+</section>
+
+
+
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="flex flex-col lg:flex-row items-center gap-10">
+    
+    <!-- Book Image (Responsive) -->
+    <div class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto">
+      <img 
+        src="images/bookimg.png" 
+        alt="Book Mockup" 
+        class="w-full h-auto max-h-[500px] object-contain rounded-md ">
+    </div>
+
+    <!-- Text Content -->
+    <div class="w-full lg:w-1/2 space-y-5 text-center lg:text-left">
+      <p class="text-sm text-gray-500">50% discount on early purchase</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Everything in your hand using mobile or tablet
+      </h2>
+      <p class="text-gray-600 text-base">
+        This lovely, well-written book is concerned with creating typography and is essential for professionals.
+      </p>
+
+      <!-- Feature List -->
+      <div class="space-y-4 text-left">
+        <div>
+          <p class="font-semibold">10+ award achieved</p>
+          <p class="text-sm text-gray-600">Debitis ab ipsum a autem sit ducimus voluptatem, quos.</p>
+        </div>
+        <div>
+          <p class="font-semibold">Read On Any Device</p>
+          <p class="text-sm text-gray-600">Consequatur non eum facilis, ex repellendus, vitae debitis.</p>
+        </div>
+        <div>
+          <p class="font-semibold">Marketing Goals</p>
+          <p class="text-sm text-gray-600">Debitis ab ipsum a autem sit ducimus voluptatem, quos.</p>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div>
+        <a href="#" class="inline-block mt-4 bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700">
+          More About Support
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Chapters we've covered</h2>
+    <div class="w-16 h-1 mx-auto bg-red-500 rounded mb-4"></div>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      This lovely, well-written book is concerned with creating typography and is essential for professionals who regularly work for clients.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Repeat this block for each chapter -->
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 1</p>
+      <p class="font-semibold text-gray-900">The rise of trend Design</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 2</p>
+      <p class="font-semibold text-gray-900">Data Science Process</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 3</p>
+      <p class="font-semibold text-gray-900">The rise of trend Design</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 4</p>
+      <p class="font-semibold text-gray-900">The rise of trend Design</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 5</p>
+      <p class="font-semibold text-gray-900">Data Science Process</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 6</p>
+      <p class="font-semibold text-gray-900">The rise of trend Design</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 7</p>
+      <p class="font-semibold text-gray-900">The rise of trend Design</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 8</p>
+      <p class="font-semibold text-gray-900">Data Science Process</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+    <div>
+      <p class="text-gray-700 font-medium">Chapter 9</p>
+      <p class="font-semibold text-gray-900">The rise of trend Design</p>
+      <p class="text-gray-600 text-sm mt-1">
+        Well-written book is concerned with creating typography and is essential for professionals who regularly
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Thing's you will learn</h2>
+    <div class="w-16 h-1 mx-auto bg-red-500 rounded mb-4"></div>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      This book is concerned with creating typography and is essential for professionals who regularly work for clients.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Card -->
+    <div class="flex items-start gap-4 bg-white shadow-md rounded-lg p-6">
+      <span class="text-2xl text-black-600">✓</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">How to improve yourself</h3>
+        <p class="text-gray-600 text-sm mt-1">
+          Well-written book is concerned with creating typography and is essential for professionals who regularly
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-white shadow-md rounded-lg p-6">
+      <span class="text-2xl text-black-600">✓</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">10 tips to improve yourself</h3>
+        <p class="text-gray-600 text-sm mt-1">
+          Well-written book is concerned with creating typography and is essential for professionals who regularly
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-white shadow-md rounded-lg p-6">
+      <span class="text-2xl text-black-600">✓</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">Utilize time productively</h3>
+        <p class="text-gray-600 text-sm mt-1">
+          Well-written book is concerned with creating typography and is essential for professionals who regularly
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-white shadow-md rounded-lg p-6">
+      <span class="text-2xl text-black-600">✓</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">Powerful tips & tricks</h3>
+        <p class="text-gray-600 text-sm mt-1">
+          Well-written book is concerned with creating typography and is essential for professionals who regularly
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-white shadow-md rounded-lg p-6">
+      <span class="text-2xl text-black-600">✓</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">How to think creatively</h3>
+        <p class="text-gray-600 text-sm mt-1">
+          Well-written book is concerned with creating typography and is essential for professionals who regularly
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 bg-white shadow-md rounded-lg p-6">
+      <span class="text-2xl text-black-600">✓</span>
+      <div>
+        <h3 class="font-semibold text-gray-800">Grow your personality</h3>
+        <p class="text-gray-600 text-sm mt-1">
+          Well-written book is concerned with creating typography and is essential for professionals who regularly
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Books Collection</h2>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+    <!-- Book Card -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden text-center">
+      <img src="images/images5.jpg" alt="Book 1" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800 mb-1">$15.99</h3>
+        <p class="text-sm text-gray-600 mb-4">An exciting tale of mystery and wonder.</p>
+        <button class="bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-800 transition">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Repeat the same block for each book -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden text-center">
+      <img src="images/download1.jpg" alt="Book 2" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800 mb-1">$12.50</h3>
+        <p class="text-sm text-gray-600 mb-4">Explore the beauty of nature and life.</p>
+        <button class="bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-800 transition">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden text-center">
+      <img src="images/download4.jpg" alt="Book 3" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800 mb-1">$18.00</h3>
+        <p class="text-sm text-gray-600 mb-4">Dive into emotional storytelling and drama.</p>
+        <button class="bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-800 transition">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden text-center">
+      <img src="images/images2.jpg" alt="Book 4" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800 mb-1">$9.99</h3>
+        <p class="text-sm text-gray-600 mb-4">A practical guide to success and confidence.</p>
+        <button class="bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-800 transition">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden text-center">
+      <img src="images/images3.jpg" alt="Book 5" class="w-full h-64 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-semibold text-gray-800 mb-1">$20.00</h3>
+        <p class="text-sm text-gray-600 mb-4">Master the art of leadership and growth.</p>
+        <button class="bg-gray-700 text-white py-2 px-4 rounded-full hover:bg-gray-800 transition">Buy Now</button>
+      </div>
+    </div>
+
+ 
+  </div>
+</section>
+
+
+<section class="max-w-6xl mx-auto px-4 py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">About the author</h2>
+    <div class="w-16 h-1 mx-auto bg-red-500 mb-4 rounded"></div>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      This book is concerned with creating typography and is essential for professionals who regularly work for clients.
+    </p>
+  </div>
+
+  <div class="flex flex-col md:flex-row items-center gap-10">
+    <!-- Author Image -->
+    <div class="flex-shrink-0">
+      <img src="images/author.jpg" alt="Author" class="w-80 h-auto rounded-md shadow-md">
+    </div>
+
+    <!-- Author Info -->
+    <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-2">Michale John</h3>
+      <p class="text-gray-700 mb-4">
+        My name is John. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, professionals who regularly.
+      </p>
+      <p class="text-gray-700 mb-4">
+        This lovely, well-written book is concerned with creating typography and is essential for professionals who regularly work for clients.
+      </p>
+      <ul class="mb-4 text-gray-900 font-semibold space-y-1">
+        <li>Achieved 10+ awarded</li>
+        <li>Very passionate about writing</li>
+        <li>Most Popular writer in the year</li>
+      </ul>
+      <p class="text-gray-700">
+        Reach Me on
+        <a href="#" class="text-blue-600 hover:underline">Twitter</a> or
+        <a href="#" class="text-blue-600 hover:underline">Facebook</a> or
+        <a href="#" class="text-blue-600 hover:underline">Linkedin</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <!-- Heading -->
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Pricing and Plans</h2>
+    <div class="w-16 h-1 bg-red-500 mx-auto my-4 rounded"></div>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      This book is concerned with creating typography and is essential for professionals who regularly work for clients.
+    </p>
+  </div>
+
+  <!-- Pricing Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Free Version -->
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Free Version</h3>
+      <p class="text-3xl font-bold text-gray-900 mb-1">$0</p>
+      <a href="#" class="text-indigo-600 font-medium underline mb-4 block">Full Free Chapter</a>
+      <p class="text-gray-600 mb-4">Get one chapter of pdf version for free busy subscribing</p>
+      <ul class="text-gray-700 space-y-1 mb-6">
+        <li>1 Free Chapter</li>
+        <li>PDF Version</li>
+        <li>Free Subscription</li>
+        <li>No Hardcover</li>
+      </ul>
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded ">
+        Get it Now
+      </button>
+    </div>
+
+    <!-- eBook Version -->
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">eBook Version</h3>
+      <p class="text-3xl font-bold text-gray-900 mb-1">$49.99</p>
+      <a href="#" class="text-indigo-600 font-medium underline mb-4 block">One time purchase</a>
+      <p class="text-gray-600 mb-4">Get one chapter of pdf version for free busy subscribing</p>
+      <ul class="text-gray-700 space-y-1 mb-6">
+        <li>Ebook Version</li>
+        <li>Audio Book</li>
+        <li>PDF Version</li>
+        <li>Free Subscription</li>
+      </ul>
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded ">
+        Get it Now
+      </button>
+    </div>
+
+    <!-- Full Version -->
+    <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+      <h3 class="text-lg font-semibold text-gray-800 mb-2">Full Version</h3>
+      <p class="text-3xl font-bold text-gray-900 mb-1">$79.99</p>
+      <a href="#" class="text-indigo-600 font-medium underline mb-4 block">One time purchase</a>
+      <p class="text-gray-600 mb-4">Get one chapter of pdf version for free busy subscribing</p>
+      <ul class="text-gray-700 space-y-1 mb-6">
+        <li>Ebook Version2</li>
+        <li>Audio Book</li>
+        <li>PDF Version</li>
+        <li>Hardcover Variation</li>
+      </ul>
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded ">
+        Get it Now
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-4xl mx-auto px-4 py-16">
+  <!-- Heading -->
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-gray-900">Contact with Author</h2>
+    <div class="w-16 h-1 bg-red-500 mx-auto my-4 rounded"></div>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      This book is concerned with creating typography and is essential for professionals who regularly work for clients.
+    </p>
+  </div>
+
+  <!-- Contact Form -->
+  <form class="space-y-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input
+        type="text"
+        placeholder="Enter Your Name"
+        class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+      />
+      <input
+        type="email"
+        placeholder="Enter Your Email Address"
+        class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+      />
+    </div>
+    <textarea
+      rows="5"
+      placeholder="Your Message"
+      class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+    ></textarea>
+
+    <div class="flex justify-between items-center flex-wrap">
+      <p class="text-sm text-gray-600 mb-2 md:mb-0">
+        * Rest assured. We will not spam at your inbox.
+      </p>
+      <button
+        type="submit"
+        class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded font-semibold"
+      >
+        Send Message
+      </button>
+    </div>
+  </form>
+</section>
+
+
+</body>
+</html>
